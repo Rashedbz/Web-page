@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
-	<title>My web page</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/my first css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 99vh;
+            font-size: 50px;
+        }
 
-<style>
-	body{
-		height:100vh;
-		font-size:50px;
-		display:flex;
-		justify-content: center; 
-		align-items: center; 
-	} 
-	button{
-		width: 50%; 
-		height: 30px; 
-		color: white;
-		background-color: red; 
-	} 
-</style> 
+        button {
+            font-size: 100%;
+            width: 40%;
+            height: 15%;
+            border-radius: 10px;
+            background-image: linear-gradient(red, blue);
+            color: aliceblue;
+        }
+    </style>
 </head>
+
 <body>
-	<button>دوس</button> 
+    <button onclick="someThing()">دوس</button>
+
+    <script>
+        function someThing() {
+            document.body.innerHTML = "شوف واحد يركبك"
+        }
+    </script>
 </body>
 
 </html>
