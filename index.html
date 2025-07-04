@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 99vh;
-            font-size: 50px;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 99vh;
+			font-size: 50px;
+		}
 
-        button {
-            font-size: 100%;
-            width: 40%;
-            height: 15%;
-            border-radius: 10px;
-            background-image: linear-gradient(red, blue);
-            color: aliceblue;
-        }
-    </style>
+		button {
+			font-size: 100%;
+			width: 40%;
+			height: 15%;
+			border-radius: 10px;
+			color: aliceblue;
+			animation: b-background 2s infinite ;
+		}
+
+		@keyframes b-background {
+			0% {
+				background-color: red;
+			}
+			16.66666%{
+				background-color: yellow;
+				color: black;
+			}
+			33.33333%{
+				background-color: green;
+			}
+			50%{
+				background-color: aqua;
+				color: black;
+			}
+			66.66667%{
+				background-color: blue;
+				color: rgb(255, 255, 255);
+			}
+			83.33334%{
+				background-color: rgb(255, 0, 255);
+			}
+			100% {
+				background-color:red;
+			}
+		}
+	</style>
 </head>
 
 <body>
-    <button onclick="someThing()">دوس</button>
+	<button onclick="someThing()">دوس</button>
 
-    <script>
-        function someThing() {
-            document.body.innerHTML = "شوف واحد يركبك"
-        }
-    </script>
+	<script>
+		function someThing() {
+			document.body.innerHTML = "شوف واحد يركبك"
+		}
+	</script>
 </body>
 
 </html>
